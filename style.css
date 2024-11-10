@@ -1,0 +1,213 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+body{
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    flex-direction: column;
+    background: #C9D3BB;
+    margin: 0;
+}
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.imaj-head{
+    background-image: url(/img/1.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 91vh;
+}
+.imaj-head> img{
+    width: 15%;
+    position: absolute;
+    left: 44%;
+}
+.head-im{
+    
+}
+.head-im  > img{
+    position: relative;
+    left: 10%;
+    bottom: 65px;
+    z-index: 1;
+    width: 80%;
+    border-radius: 12px;
+}
+.nav-bar ul img{
+width: 63px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 42px;
+    height: 69px;
+    align-items: center;
+    position: relative;
+    bottom: 152vh;
+    left: 10%;
+    border-radius: 12px;
+    z-index: 1;
+    background: white;
+    width: 80%;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-bar ul a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.nav-bar select{
+    background: #B59F78;
+    border: none;
+    border-radius: 3px;
+}
+.nav-bar  #button li{
+    background: white; 
+    border: solid #B59F78;
+  padding: 2px 20px;
+  border-radius: 21px;
+  color: #B59F78;
+}
+.nav-bar li a:hover,
+.nav-bar li a.active{
+    color: #B59F78;
+}
+
+.nav-bar #button li:hover{
+    background: #bec2c9;
+    border: none;
+    box-shadow:  0 0 5px #A6AEBF;
+    /* padding: 5px; */
+    transition: 0.3s;
+}
+/* parti reservation*/
+.reservation-form{
+ background: white;
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    width: 70%;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    bottom: 193px;
+    z-index: 2;
+    left: 170px; 
+    border-radius: 12px;  
+}
+.form-group{
+    color: #87724A;
+}
+.reservation-form button{
+    border: none;
+    background: #99A18D;
+    padding: 6px;
+    border-radius: 4px;  
+    color: white;
+    cursor: pointer;
+}
+
+.reservation-popup {
+    background: #99A18D;
+    z-index: 999;
+    width: 36%;
+    border-radius: 4px;
+    position: relative;
+    bottom: 188px;
+    color: white;
+    right: 0;
+    left: 35%;
+    text-align: center;
+    height: 228px;
+  }
+  .reservation-popup h2{
+    text-align: center;
+    color: black;
+  }
+  .reservation-popup button{
+    border: none;
+    background: #D2E0FB;
+    padding: 9px;
+    width: 79px;
+    border-radius: 4px;  
+    color: white;
+    cursor: pointer;
+  }
+  /* partie presentation */
+  .presentation{
+    width: 60%;
+    background:#99A18D;
+  position: relative;
+  left: 20%;
+/* border-radius: 12px;  */
+height: 1200px;
+  }
+  .presentation h2{
+text-align: center;
+  }
+  .present-1{
+ display: flex;
+ margin: 13px;
+ align-items: center;
+ color: white;
+  }
+ 
+  .present-1 p h2{
+    display: flex;
+    flex-direction: column;
+  }
+  .present-2{
+    display: flex;
+    color: white;
+    margin: 13px;
+  }
+  .present-3{
+    display: flex;
+    color: white;
+    margin: 13px;
+  }
+  .presentation img{
+    width: 43%;
+    border-radius: 12px;
+  } 
+  /* partie les chamombre */
+  .chambre{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #87724A;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .left{
+    width: 50%;
+  }
+.left img{
+    width: 12%;
+}
+.left h2{
+    text-align: center;
+}
+.rihgt{
+width: 50%;
+}
+.rihgt img{
+    width: 50%;
+}
+
+
+

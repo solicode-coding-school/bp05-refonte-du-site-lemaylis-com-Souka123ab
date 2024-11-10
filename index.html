@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <title>Le mylise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="imaj-head">
+            <!-- <img src="img/1.jpeg" alt="" srcset=""> -->
+            <img src="img/2.png" alt="" srcset="">
+        </div>
+    <div  class="head-im">
+            <img src="img/2024-09-16.jpg" alt="" srcset="">
+        <div class="nav-bar">
+                <ul>
+                   <li><a class="active" href="#">Home</a></li>
+                   <li><a href="#presentation">Présentation</a> </li>
+                   <li><a href="#chambre">Chambres</a></li>
+                   <li><a href="#nouriture">Table</a></li>
+                   <img src="img/2.png" alt="" srcset="">
+                   <li><a href="#activités ">Activités</a></li>
+                   <li><a href="#prix-chambre">Tarifs</a></li>
+                   <li><a href="#localisation">Localisation</a></li>
+                </ul>
+                <div class="lang">
+                    <label for="langue">Langue</label>
+                    <select name="langue" id="langue">
+                        <option value="englais">EN</option>
+                        <option value="francias">FR</option>
+                        <option value="spanich">SP</option>
+                    </select>
+                </div>
+                <ul id="button">
+                    <li><a href="#contact">Contacte</a></li>
+                </ul>
+                
+                    
+         </div>
+         <!--partie reservation  -->
+     </div>
+     <div class="reservation-form">
+        <div class="form-group">
+          <label for="checkin">Date d'entrée</label>
+          <input type="date" id="checkin" name="checkin">
+        </div>
+        <div class="form-group">
+          <label for="checkout">Date de sortie</label>
+          <input type="date" id="checkout" name="checkout">
+        </div>
+        <div class="form-group">
+          <label for="rooms">Chambre</label>
+          <select id="rooms" name="rooms">
+            <option value="single">Chambre simple</option>
+            <option value="double">Chambre double</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+        <button class="reserve-button" onclick="showReservationDetails()">Réserver</button>
+      </div>
+      
+      <div class="reservation-popup" id="reservationPopup">
+        <h2>Détails de votre réservation</h2>
+        <p id="roomType"></p>
+        <p id="nights"></p>
+        <p id="totalPrice"></p>
+        <button onclick="closePopup()">Fermer</button>
+      </div>
+<!-- partie presentation -->
+
+    <section id="presentation" class="presentation">
+        <h2>Présentation</h2>
+    
+        <div class="present-1">
+            <img src="img/2023-01-04_4.jpg" alt="" srcset="">
+            <div class="legit">
+                <h3>Le gite</h3>
+            </div>
+            
+            <p>Le Maylis, gîte Rural classé 1ère catégorie, se situe à 25 Km de Tanger en direction d'Asilah.
+                 Adossé sur le flanc sud du Jebel Zhirou, il offre une vue magnifique sur les contreforts du Rif.
+                Therese vous accueille dans ce cadre verdoyant, au cœur de la campagne,
+                 où tranquillité et confort vous assurent un séjour reposant.
+                Construit sur un terrain de 5000 m2, le gîte dispose de 6 chambres doubles et peut recevoir jusqu'à 12 personnes.</p>
+        </div>
+        <div class="present-2">
+            <h3>Le site</h3>
+           <p>Le bâtiment principal et les bungalows sont agencés dans un grand jardin entouré de figuiers
+             de barbarie et d'un bois d'oliviers sauvages.Les nombreux espaces 
+             communs font du gîte un vrai lieu de vie où vous pourrez partager des moments de convivialité en famille ou entre amis.</p>
+           <img src="img/2024-09-16.jpg" alt=""> 
+        </div>
+       <div class="present-3">
+        <img src="img/2023-01-04_3.jpg" alt="" srcset="">
+        <h3>A l'intérieur</h3>
+        <p>
+            Salle à manger, salons, bibliothèque et espaces couverts sous les arcades sont à
+             votre disposition pour prendre vos repas ou vous détendre en profitant de la
+              vue sur la campagne environnante.</p>
+       </div> 
+    </section>
+    <!-- presentation chambre -->
+    <section id="chambre" class="chambre">
+        <div class="left">
+            <h2>Les chambres</h2>
+        <img src="img/slider3-1920.jpg" alt="" srcset="">
+        <img src="img/chambre-1.jpg" alt="" srcset="">
+        <p>Le gîte se compose de 6 chambres pour 2 personnes, dont 2 communicantes.
+         Chaque chambre est équipée de rangements et d'une salle de bain avec douche et WC.
+          Elles disposent également d'espaces privatifs en extérieur pour profiter
+           du jardin en toute tranquillité.</p>
+        </div>
+        
+           <div class="rihgt">
+            <img src="img/chambre-4-350.jpg" alt="" srcset="">
+           </div>
+    </section>
+    <!-- partie d nouriture -->
+    <section id="nouriture">
+    <div class="table">
+        <h1>Table d'hotel</h1>
+        <p>Le Maylis propose à ses hôtes un service de restauration. 
+            Sur demande, nous pouvons vous préparer des repas à base 
+            de produits régionaux aux saveurs marocaines ou méditerranéennes.</p>
+    </div> 
+    <div class="noritur">
+        <div class="face1"><img src="img/2022-10-17_2.jpg" alt="" srcset=""></div>
+        <div class="face-opaciti"></div>
+        <div class="face-2"><img src="img/2022-10-17_2.jpg" alt="" srcset=""></div>
+    </div>
+    <div class="noritur-1">
+        <div class="face1"><img src="img/table-2.jpg" alt="" srcset=""></div>
+        <div class="face-opaciti"></div>
+        <div class="face-2"><img src="img/table-2.jpg" alt="" srcset=""></div>
+    </div>
+    <div class="noritur-2">
+        <div class="face1"><img src="img/2022-10-17_1.jpg" alt="" srcset=""></div>
+        <div class="face-opaciti"></div>
+        <div class="face-2"><img src="img/2022-10-17_1.jpg" alt="" srcset=""></div>
+    </div>
+
+    </section>
+    <!-- partie activités -->
+    <section id="activités">
+        <h1>Activités </h1>
+        <div class="active-1">
+            <img src="img/activities-2.jpg" alt="" srcset="">
+            <div class="adice">
+                <h2>Stages et séminaires</h2>
+                <p>Les espaces utilisables en intérieur comme en extérieur font du 
+                    gîte un lieu idéal pour des séminaires ou des stages pour des groupes 
+                    jusqu'à 12 personnes.</p>
+                    <span>01</span>
+            </div>
+        </div>
+        <div class="active-2">
+          <img src="img/activities-1.jpg" alt="" srcset="">  
+          <div class="adice-2">
+            <h2>A proximité</h2>
+            <p>Le gîte se situe au bord d'une zone écotouristique du nord du Maroc, avec à 8 Km, l'océan Atlantique et ses plages magnifiques à perte de vue pour se baigner ou se promener au bord de l'eau. La forêt diplomatique, le Cap Spartel et les Grottes d'Hercule sont autant de sites à découvrir le long du littoral tangérois.
+                De nombreuses activités sportives sont également possibles à proximité du gîte :
+                -La randonnée pour découvrir les richesses des paysages de la région (possibilité d'être accompagné par un guide professionnel).
+                -Le quad avec « Tanger quad ».
+                -Les balades à cheval sur la plage ou en forêt avec le Royal Club équestre de Tanger.
+                -L'initiation à la plongée à « La Piscine » (plage de Sidi Kacem).</p>
+                <span>02</span>
+          </div>
+        </div>
+    </section>
+    <!-- partie prix -->
+
+    <section id="prix-chambre">
+        <img src="img/2023-01-04_7.jpg" alt="" srcset="">
+        <div class="prix-chambre-1">
+            <h1>Tarifs</h1>
+            <hr>
+        </div>
+        <div class="tableau-prix">
+            <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1ère nuit (MAD)</th>
+      <th>Nuits suivantes (MAD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chambre simple</td>
+      <td>500</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>Chambre double</td>
+      <td>800</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Suite (jusqu'à 4 personnes)</td>
+      <td>1200</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Enfant (6-12 ans)</td>
+      <td>150</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </section>
+    <!-- partie localisation -->
+     <section id="localisation">
+        <h1>Localisation</h1>
+        <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d788.4129045337004!2d-5.861188174949767!3d35.6773356627196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b85d38b8ba60f%3A0x625ee5e862ac95ae!2sLe%20Maylis!5e1!3m2!1sfr!2sma!4v1730915331041!5m2!1sfr!2sma"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+     <!-- partie contact -->
+      <section id="contact">
+        <img src="img/2023-01-04_4.jpg" alt="" srcset="">
+       <form action="" method="get">
+        <h2>Contact</h2>
+        <input type="text" placeholder="Full Name" id="Name">
+        <input type="tel" placeholder="Phone Number" id="Number">
+        <input type="email" name="email" id="email">
+        <textarea name="mesag" id="mesag" placeholder="Mesag"></textarea>
+        <button id="send">Send</button>
+       </form> 
+      </section>
+      <!-- partie footer -->
+       <footer>
+        <div class="footer-1">
+            <h3>Le Maylis</h3>
+            <h3>Douar Bougdour</h3>
+            <p>Commune Rurale Hair N'hal</p>
+            <p>Tanger - Maroc</p>
+            <p>Tel : + 212 6 66 54 90 33</p>
+        </div>
+        <div class="footer-2">
+            <img src="img/2.png" alt="" srcset="">
+            <!-- dk l3iba d tali d page -->
+        </div>
+        <div class="econ">
+            <!-- njibo econ -->
+        </div>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>
